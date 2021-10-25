@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="Text/JavaScript" src="./index.js"></script>
+</head>
+<body>
+    <section class="container">
+        <div class="textos">
+            <div class="content">
+                <h1>Calculadora</h1>
+                <p>Calculadora não é só uma das ferramentas mais úteis, mas também são importantes para entender UI e processos de eventos em uma aplicação. Criei essa calculadora com o intuito de fazer cálculos aritméticos básicos nos 'integers'
+                </p>
+            </div>
+        </div>
+        <div class="calculadora-frame">
+            <div class="resultado">
+                <div class="calculo">
+                    <p class="p-calculo" id="total"></p>
+                </div>
+                <div class="res-calculo">
+                    <p class="p-res-calculo" id="accumulator"></p>
+                </div>
+                <div class="historico" id="history">
+                </div>
+            </div>
+            <div class="botoes">
+                <div class="grid">
+                    <div class="botao char01"><p class="char "><a onclick="CleanAll()">AC</a></p></div>
+                    <div class="botao char02"><p class="char "><a onclick="CleanCurrentEntry()">DEL</a></p></div>
+                    <div class="botao char03"><p class="char "><a onclick="AddNumber(1)">1</a></p></div>
+                    <div class="botao char04"><p class="char "><a onclick="AddNumber(2)">2</a></p></div>
+                    <div class="botao char05"><p class="char "><a onclick="AddNumber(3)">3</a></p></div>
+                    <div class="botao char06"><p class="char "><a onclick="CalcAction('+')">+</a></p></div>
+                    <div class="botao char07"><p class="char "><a onclick="AddNumber(4)">4</a></p></div>
+                    <div class="botao char08"><p class="char "><a onclick="AddNumber(5)">5</a></p></div>
+                    <div class="botao char09"><p class="char "><a onclick="AddNumber(6)">6</a></p></div>
+                    <div class="botao char10"><p class="char "><a onclick="CalcAction('-')">-</a></p></div>
+                    <div class="botao char11"><p class="char "><a onclick="AddNumber(7)">7</a></p></div>
+                    <div class="botao char12"><p class="char "><a onclick="AddNumber(8)">8</a></p></div>
+                    <div class="botao char13"><p class="char "><a onclick="AddNumber(9)">9</a></p></div>
+                    <div class="botao char14"><p class="char "><a onclick="CalcAction('*')">*</a></p></div>
+                    <div class="last-line">
+                        <div class="botao char15"><p class="char "><a onclick="AddNumber(0)">0</a></p></div>
+                        <div class="botao char16"><p class="char "><a onclick="AddComma()">.</a></p></div>
+                        <div class="botao char17"><p class="char "><a onclick="CalcAction('/')">/</a></p></div>
+                    </div>
+                </div>
+                <div class="igual">
+                    <p class="sinal-igualdade"><a onclick="Result()">=</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
