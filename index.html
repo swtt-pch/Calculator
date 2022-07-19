@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="index.css">
-    <script type="Text/JavaScript" src="./index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <script type="Text/JavaScript" src="./index.js"></script> -->
+    <script type="module" src="./js/script.js"></script>
 </head>
 <body>
     <section class="container">
@@ -30,28 +31,31 @@
             </div>
             <div class="botoes">
                 <div class="grid">
-                    <div class="botao char01"><p class="char "><a onclick="CleanAll()">AC</a></p></div>
-                    <div class="botao char02"><p class="char "><a onclick="CleanCurrentEntry()">DEL</a></p></div>
-                    <div class="botao char03"><p class="char "><a onclick="AddNumber(1)">1</a></p></div>
-                    <div class="botao char04"><p class="char "><a onclick="AddNumber(2)">2</a></p></div>
-                    <div class="botao char05"><p class="char "><a onclick="AddNumber(3)">3</a></p></div>
-                    <div class="botao char06"><p class="char "><a onclick="CalcAction('+')">+</a></p></div>
-                    <div class="botao char07"><p class="char "><a onclick="AddNumber(4)">4</a></p></div>
-                    <div class="botao char08"><p class="char "><a onclick="AddNumber(5)">5</a></p></div>
-                    <div class="botao char09"><p class="char "><a onclick="AddNumber(6)">6</a></p></div>
-                    <div class="botao char10"><p class="char "><a onclick="CalcAction('-')">-</a></p></div>
-                    <div class="botao char11"><p class="char "><a onclick="AddNumber(7)">7</a></p></div>
-                    <div class="botao char12"><p class="char "><a onclick="AddNumber(8)">8</a></p></div>
-                    <div class="botao char13"><p class="char "><a onclick="AddNumber(9)">9</a></p></div>
-                    <div class="botao char14"><p class="char "><a onclick="CalcAction('*')">*</a></p></div>
+                    <div class="first-line">
+                        <div class="botao char01"><p class="char "><a class="action ac">AC</a></p></div>
+                        <div class="botao char0x"><p class="char "><a class="action c">C</a></p></div>
+                        <div class="botao char02"><p class="char "><a class="action del">DEL</a></p></div>
+                    </div>
+                    <div class="botao char03"><p class="char "><a class="number">1</a></p></div>
+                    <div class="botao char04"><p class="char "><a class="number">2</a></p></div>
+                    <div class="botao char05"><p class="char "><a class="number">3</a></p></div>
+                    <div class="botao char06"><p class="char "><a class="operation">+</a></p></div>
+                    <div class="botao char07"><p class="char "><a class="number">4</a></p></div>
+                    <div class="botao char08"><p class="char "><a class="number">5</a></p></div>
+                    <div class="botao char09"><p class="char "><a class="number">6</a></p></div>
+                    <div class="botao char10"><p class="char "><a class="operation">-</a></p></div>
+                    <div class="botao char11"><p class="char "><a class="number">7</a></p></div>
+                    <div class="botao char12"><p class="char "><a class="number">8</a></p></div>
+                    <div class="botao char13"><p class="char "><a class="number">9</a></p></div>
+                    <div class="botao char14"><p class="char "><a class="operation">*</a></p></div>
                     <div class="last-line">
-                        <div class="botao char15"><p class="char "><a onclick="AddNumber(0)">0</a></p></div>
-                        <div class="botao char16"><p class="char "><a onclick="AddComma()">.</a></p></div>
-                        <div class="botao char17"><p class="char "><a onclick="CalcAction('/')">/</a></p></div>
+                        <div class="botao char15"><p class="char "><a class="number">0</a></p></div>
+                        <div class="botao char16"><p class="char "><a class="number">.</a></p></div>
+                        <div class="botao char17"><p class="char "><a class="operation">/</a></p></div>
                     </div>
                 </div>
                 <div class="igual">
-                    <p class="sinal-igualdade"><a onclick="Result()">=</a></p>
+                    <p class="sinal-igualdade"><a class="result">=</a></p>
                 </div>
             </div>
         </div>
